@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <script src="https://cdn.ckeditor.com/4.16.1/standard/ckeditor.js"></script>
+    <style>
+      .btn {
+
+        height: 20px;
+        width: 50px;
+        border: 1px solid red;
+
+      }
+        .custom-navbar {
+          background-color: #01b2a6ab;
+          margin-right: 14rem;
+          width: 100%;
+          height: 4rem;
+         
+  
+      }
+
+      .navbar-nav .nav-item {
+        margin-right: 9rem;
+      
+  }
+  .style-p{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 3rem;
+  }
+  .text-center {
+
+    background-color: #01b2a6ab ;
+    height: 3rem;
+    width:  8rem;
+    border: none;
+    border-radius: 3px;
+    display: block;
+    margin-top: 5rem;
+   
+  margin-left: auto;
+  margin-right: auto;
+  }
+  .btn{
+    background-color: #01b2a6ab ;
+    height: 3rem;
+    width:  8rem;
+    border: none;
+    border-radius: 3px;
+    display: block;
+    margin-top: 5rem;
+    margin-left: 7rem;
+    margin-bottom: 30rem;
+    margin-left: 40rem;
+
+  }
+  
+  .newAdd {
+
+    font-size: 4rem;
+    padding-left: 20rem;
+ 
+    width: 40rem;
+    display: flex;
+   
+    justify-content: center;
+    display: block;
+    margin-left: 27rem;
+
+    
+  }
+    </style>
+  </head>
+  
+  <body>
+    <nav class="navbar navbar-expand-lg custom-navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="https://cdn-icons-png.flaticon.com/128/3900/3900577.png?ga=GA1.1.1364062190.1697387589&track=ais" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+        
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">sections</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">about us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " id="welcome-user" style="color: #0e0f0f"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <img src="https://img.freepik.com/free-vector/hand-drawn-flat-design-devops-illustration_23-2149375793.jpg?w=900&t=st=1700084239~exp=1700084839~hmac=f721e10bc38534f1c89752357d507f261c67ea4e57e902225eb087c49594f94e" alt="" style="padding-bottom: 9rem;">
+    <p class="style-p">Our Services</p>
+    <div class="row row-cols-1 row-cols-md-3 " style="padding-bottom: 6rem; padding-right:3rem;">
+      <div class="col">
+        <div class="card h-100 w-75" style="margin-left: 3rem;">
+          <img src="https://img.freepik.com/free-vector/programmers-using-javascript-programming-language-computer-tiny-people-javascript-language-javascript-engine-js-web-development-concept-bright-vibrant-violet-isolated-illustration_335657-986.jpg?size=626&ext=jpg&ga=GA1.1.1364062190.1697387589&semt=sph" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Javascript</h5>
+            
+          </div>
+          <div class="card-footer">
+          
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 w-75">
+          <img src="https://img.freepik.com/free-vector/react-native-mobile-app-abstract-concept-illustration-cross-platform-native-mobile-app-development-framework-javascript-library-user-interface-operating-system_335657-3350.jpg?size=626&ext=jpg&ga=GA1.1.1364062190.1697387589&semt=sph" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">React</h5>
+            
+          </div>
+          <div class="card-footer">
+           
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 w-75">
+          <img src="https://img.freepik.com/free-vector/gradient-ui-ux-background_23-2149052117.jpg?size=626&ext=jpg&ga=GA1.1.1364062190.1697387589&semt=ais" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">UI/UX</h5>
+           
+          </div>
+          <div class="card-footer">
+           
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- ckeditor -->
+     
+  <div class="d-flex w-100 justify-content-center">
+    <textarea name="textarea" cols="10" rows="10" class="w-50"></textarea>
+  </div>
+  <button class="text-center" id="btn">submit</button>
+  <!-- <button class="text-center" id="btn">submit</button> -->
+<!-- <div id="container"></div> -->
+
+<div style="margin-top: 10rem; margin-bottom: 6rem;"></div>
+  <div id="blog"></div>
+  <script>
+		const userName = localStorage.getItem('User');
+	
+		if (!userName) {
+			window.location.href = 'login.html';
+		} else {
+
+			let messgaeUser = document.getElementById('welcome-user');
+			messgaeUser.innerText = `Discover Our Blog, ${userName}🤍`;
+		}
+	</script>
+
+  
+<script src="script1.js">
+  
+ 
+
+ 
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
